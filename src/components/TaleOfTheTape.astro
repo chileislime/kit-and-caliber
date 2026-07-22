@@ -1,0 +1,48 @@
+---
+interface TapeRow {
+  spec: string;
+  left: string;
+  right: string;
+}
+
+interface Props {
+  left: string;
+  right: string;
+  rows: TapeRow[];
+}
+
+const { left, right, rows } = Astro.props;
+---
+
+<section class="tape" id="tape">
+  <div class="wrap">
+    <div class="taphead">
+      <h2>Tale of the Tape</h2>
+      <span class="m">Same question · two honest answers</span>
+    </div>
+
+    <div class="card">
+      <div class="tape-headrow">
+        <div class="side">
+          <div class="cat">In this corner</div>
+          <div class="name">{left}</div>
+        </div>
+        <div class="vs">VS</div>
+        <div class="side r">
+          <div class="cat">And this corner</div>
+          <div class="name">{right}</div>
+        </div>
+      </div>
+
+      {
+        rows.map((row) => (
+          <div class="tape-row">
+            <div class="cell">{row.left}</div>
+            <div class="spec">{row.spec}</div>
+            <div class="cell r">{row.right}</div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
