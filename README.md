@@ -1,7 +1,6 @@
 # Kit & Caliber
 
-A writing-led, image-free editorial that pairs watches with cars — argued from taste, not authority. Built with [Astro](https://astro.build) + MDX. Racing-green skin, Anton / Archivo / Space Mono type system.
-
+A writing-led editorial that pairs the things you carry with the things that carry you, argued from taste, not authority. Built with [Astro](https://astro.build) + MDX. Dirty-white skin with green and gold accents, Anton / Archivo / Space Mono type system.
 ## Run it locally
 
 ```bash
